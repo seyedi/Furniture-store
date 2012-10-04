@@ -2,11 +2,11 @@
 ---------------------------
 ###People who work in this project:
 
-* [Kamyab Hooshmand](https://github.com/Kamyab-H) Developer/programer
-
 * [Alireza Karimi](https://github.com/AlirezaKarimi) Developer/programer
 
 * [Mojtaba Seyedi](https://github.com/seyedi) Developer/Designer
+
+* [Kamyab Hooshmand](https://github.com/Kamyab-H) Developer/programer
 
 
 ###Team name: BiiiG
