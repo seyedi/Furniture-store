@@ -1,0 +1,485 @@
+body {
+	padding-top  : 160px;
+	background-color: #000;
+	-webkit-transition	: padding-top 1s ease;
+	-moz-transition		: padding-top 1s ease;
+	-o-transition		: padding-top 1s ease;
+	-ms-transition		: padding-top 1s ease;
+}
+
+div.container {
+	overflow : hidden;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Initialization
+-------------------------------------------------- */
+#loading *{
+	opacity				: 0.4;
+	-webkit-transition	: all 1s;
+}
+
+body.preload #loading * {
+	opacity		: 0.7;
+}
+
+#loading div.backimg{
+	position		: fixed;
+	left 			: 0;
+	right 			: 0;
+	top 			: 0;
+	bottom 			: 0;
+	background-color: black;
+	z-index			: 1001;
+	background-image: url('../images/loading3.gif');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#loading div.txt{
+	text-align  : center;
+	position 	: fixed;
+	z-index		: 1000;
+	left 		: 0;
+	right 		: 0;
+	top 		: 0;
+	width 		: 180px;
+	height 		: 65px;
+	margin 		: 250px auto;
+	font-size 	: 30px;
+	color 		: white;
+}
+
+/*menu css
+*************************/
+header {
+	padding : 10px 0 2px 0;
+ 	position: fixed;
+	/*height: 170px;*/
+	background :url('../images/leather.jpg');
+	background-repeat: repeat-x;
+	left 	: 0;
+	top 	: 0;
+	right 	: 0;
+	z-index: 999;
+}
+
+h1.logo{
+	padding-left: 180px;    /*for google*/
+	width       : 0;		/*for google*/
+	overflow	: hidden;   /*for google*/
+	height      : 85px;
+	background: url('../images/logo.png');
+	margin: 0 auto;
+	-webkit-transition	: height 1s ease;
+	-moz-transition		: height 1s ease;
+	-o-transition		: height 1s ease;
+	-ms-transition		: height 1s ease;
+}
+
+div.line{
+	height: 2px;
+	background:url('../images/lines.png');
+	background-repeat: repeat-x;
+}
+
+nav{
+	min-height  :50px;
+	width  		: 800px;
+	margin 		: 5px auto;
+}
+
+ul {
+	Width:950px;
+}
+
+nav li{
+	float: left;
+	margin-left: 40px;
+}
+
+nav li:first-child {
+	margin-left: 0;
+}
+
+nav  li a {
+	text-align: center;
+	color : #D2AE7E;
+	display: block;
+	text-decoration: none;
+	padding: 10px 20px;
+	text-shadow:black 3px 1px;
+	font-family : Georgia, Times New Roman, Times, serif;
+	font-style  : italic;
+	font-size	: 13px;
+	text-transform: capitalize;
+}
+
+li a span {
+	display: block;
+}
+
+nav li a span.top {
+	font-family: museo-slab,serif;
+	font-style: normal;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size	: 15px;
+	color : white;
+	margin: 0 auto;
+}
+
+nav li a span.bottom {
+	color : #ff0 !important;
+}
+
+nav li a:hover {
+	color : white;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-o-transition:.5s;
+	-ms-transition:.5s;		
+}
+
+nav li a:hover span.top {
+	color: #D2AE7E;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;		
+	-o-transition:.5s;
+	-ms-transition:.5s;	
+}
+
+/*banner css
+**********************************************************************/
+div.banner {
+	position: relative;
+	background-image  :url('../images/banner.jpg');
+	/*background-position: 200px 0;*/
+	background-repeat :no-repeat;
+	height : 476px;
+}
+
+div.banner span {
+	position : absolute;
+	top  	 : 80%;
+	width 	 : 80px;
+	height	 : 80px;
+	cursor	 : pointer;
+	display  : block;
+	border-radius: 40px;
+	left     : 48%;
+	z-index  : 2;
+}
+
+div.banner span.down-arrow {
+	background-image:url('../images/down-arrow.png');
+	z-index: 3;
+}
+
+div.banner span.up-arrow {
+	background-image:url('../images/up-arrow.png');
+}
+
+div.banner  span:hover {
+	background-position-x : 80px; 
+	background-position   : 80px 0; /*for another browser*/
+}
+
+
+
+/*gallery css
+***********************************************************************/
+
+
+div.gallery-container {
+	overflow	: hidden;
+	position 	: relative;
+}
+
+div.gallery-container  span {
+	position : absolute;
+	top  	 : 45%;
+	z-index	 : 100;
+	width 	 : 80px;
+	height	 : 80px;
+	cursor	 : pointer;
+	display  : block;
+	border-radius: 40px;
+}
+
+div.gallery-container  span.arrow-right {
+	background-image:url('../images/arrow-right.png');
+	right 	 : 30px;
+}
+
+div.gallery-container  span.arrow-left {
+	background-image:url('../images/arrow-left.jpg');
+	left 	 : 30px;
+}
+
+div.gallery-container  span:hover {
+	background-position-y : -80px; 
+	background-position : 0 -80px; 
+}
+
+.badboy {
+	width 	  	: 0 	!important;
+	height    	: 0 	!important;
+	min-width 	: 0 	!important;
+	min-height	: 0 	!important;
+	float 		: none 	!important;
+	clear 	  	: both 	!important;
+	border 		: none  !important;
+}
+
+section.gallery {
+	position: relative;
+	background-color: #ccc;
+	padding 	: 40px 1px;
+	width   	: 7000px;
+	-webkit-transition	: left 1s ease;
+	-moz-transition		: left 1s ease;
+	-o-transition		: left 1s ease;
+	-ms-transition		: left 1s ease;
+}
+
+section.gallery > div {
+	float  : left;
+	border-bottom : 50px solid white;
+	margin-left: 30px;
+	-webkit-box-shadow	: -20px 0px 80px 0px #fff;
+	-moz-box-shadow		: -20px 0px 80px 0px #fff;
+	-o-box-shadow		: -20px 0px 80px 0px #fff;
+	-ms-box-shadow		: -20px 0px 80px 0px #fff;
+}
+
+section.gallery > div > img {
+	display: block;
+}
+
+section.gallery > div:first-child {
+	margin-left: 200px;
+	width : 460px;
+	height: 363px;
+	padding-top : 150px;
+	padding-right: 50px;
+	box-shadow: none;
+	border : none;
+}
+
+section.gallery > div:first-child a {
+	padding : 10px 20px;
+	background-color: #ccc;
+	color : #333;
+	text-decoration: none;
+	display: block;
+	border: 1px solid #eee;
+	width : 230px;
+	margin-top: 30px;
+	font-family: museo-slab,serif;
+	font-style: normal;
+	font-weight: 800;
+	text-transform: uppercase;
+	appearance:button;
+	-moz-appearance:button; /* Firefox */
+	-webkit-appearance:button; /* Safari and Chrome */
+}
+
+section.gallery > div:first-child h1 {
+	font-size 	: 48px;
+	text-shadow	: 0px 1px 0px rgba(0, 0, 0, .25), 0px -1px 0px rgba(255, 255, 255, .25);
+	font-family : museo-slab,serif;
+	color 		: #222;
+	font-style	: normal;
+	font-weight	: 900;
+	text-transform: uppercase;
+	/*-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,.8)));*/
+}
+
+section.gallery > div:first-child h2 {
+	margin-top: 0px;
+	padding-bottom: 4px;
+	border-bottom : 1px dashed #999;
+	font-family : museo-slab,serif;
+	color 		: #373737;
+	font-style	: normal;
+	font-weight	: 900;
+	text-transform: uppercase;
+	font-size : 30px;
+} 
+
+section.gallery > div:first-child p {
+	color : #333;
+	margin-top: 12px;
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+/* slide show (new producs)css
+*************************/
+div.newproducts {
+	padding : 1px 0; 
+	text-align: center;
+	height : 600px;
+	background-image : url('../images/leather.jpg'); 
+}
+
+div.newproducts h1 {
+	margin-top  : 20px;
+	font-size 	: 30px;
+	text-shadow	: 0px 1px 0px rgba(0, 0, 0, .25), 0px -1px 0px rgba(255, 255, 255, .25);
+	font-family : Georgia, Times New Roman, Times, serif;
+	color 		: #ccc;
+	font-style	: normal;
+	font-weight	: 900;
+	text-transform: uppercase;
+	/*-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,.8)));*/
+	gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,.3)));
+}
+
+div.newproducts h6 {
+	color 		: #555;
+}
+
+div.newproducts section.slide {
+	position 	: relative;
+	width  		: 900px;
+	border 		: 20px solid white;
+	height 		: 476px; 
+	margin 		: 10px auto;
+	background-image : url('../images/newpro/1.jpg');
+}
+
+/* Contact Page CSS
+***********************************************************/
+div.contactcontainer {
+	min-height 	: 540px;
+}
+
+div.contact {
+	width  : 950px;
+	margin: 0 auto;
+	min-height 	: 540px;
+	background-color : rgb(0,0,0); /* The Fallback */
+	background-color : rgba(0,0,0,0.7);
+	filter:alpha(opacity=70); /* For IE8 and earlier */
+	padding: 30px;
+}
+
+
+div.contact .contactleft {
+	min-height: 510px;
+	width: 480px;
+	float: left;
+	border-right: 1px solid rgb(32, 22, 22); /* The Fallback */
+	border-right: 1px solid rgba(32, 22, 22, 0.7);
+	filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+
+div.contact .contactleft h2 {
+	color: white;
+	font-size: 24px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+div.contact .contactleft h3 {
+	color  			: #D2AE7E;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+
+div.contact .contactleft address {
+	margin-top: 15px;
+	line-height: 22px;
+	color  			: white;
+	font-size: 14px;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-weight: lighter;
+}
+
+div.contact .contactleft address a {
+	text-decoration: none;
+	color: white;
+}
+
+div.contact .contactleft .add {
+	/*background-color: rgb(11, 11, 11); /* The Fallback */*/
+	/*background-color: rgba(11, 11, 11, 0.7);*/
+	filter:alpha(opacity=70); /* For IE8 and earlier */
+	margin-top: 20px;
+	margin-right: 20px;
+	font-family: 'Archivo Narrow', sans-serif;
+	background-image:url('../images/header.png');
+	border-radius: 5px;
+	padding:5px;
+	padding-left: 10px;
+}
+
+div.contact .contactleft .add p {
+	color: white;
+	line-height: 22px;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 14px;
+}
+
+div.contact .contactright {
+	min-height: 500px;
+	margin-left: 510px;
+	margin-top: 40px;
+}
+
+div.contact .contactright h1 {
+	visibility: hidden;
+}
+
+div.contact .contactright p {
+	color: white;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+div.contact .contactright input.name,textarea {
+	margin-bottom: 20px;
+	margin-top: 3px;
+	background-color: rgb(22,22,22); /* The Fallback */
+	background-color: rgba(22, 22, 22, 0.7);
+	filter:alpha(opacity=70); /* For IE8 and earlier */
+	color: white;
+	border: 1px solid #2B2B2B;
+	width: 200px;
+	height: 22px;
+}
+
+div.contact .contactright textarea {
+	margin-bottom: 20px;
+	margin-top: 3px;
+	width: 350px;
+	height: 170px;
+}
+
+div.contact .contactright input.button {
+	width: 100px;
+	height: 30px;
+	text-transform: capitalize;
+}
+
+/* footer css
+************************/
+footer {
+	height 				: 30px;
+	text-align 			: center;
+	background-image    : url('../images/leather.jpg');
+}
+
+footer p {
+	margin-top  : 8px;
+	color 		: #888;
+	font-family : Georgia, Times New Roman, Times, serif;
+	font-style	: italic;
+	font-size	: 12px;
+}
+
