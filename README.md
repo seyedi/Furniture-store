@@ -11,6 +11,8 @@
 
 ###Team name: BiiiG
 
+###Design Idea : www.ascensionlatorre.com
+
 ###Technologies:
 
 CSS
