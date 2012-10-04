@@ -2,11 +2,9 @@
 ---------------------------
 ###People who work in this project:
 
-* [Ali Mihandoost](https://github.com/alimd) Teacher & Technical Manager
+* [Kamyab Hooshmand](https://github.com/Kamyab-H) Developer/programer
 
-* [Kamyab Hooshmand](https://github.com/Kamyab-H) Developer/Designer/Graphist
-
-* [Alireza Karimi](https://github.com/AlirezaKarimi) Developer/Designer/Network Provider
+* [Alireza Karimi](https://github.com/AlirezaKarimi) Developer/programer
 
 * [Mojtaba Seyedi](https://github.com/seyedi) Developer/Designer
 
@@ -14,8 +12,6 @@
 ###Team name: BiiiG
 
 ###Technologies:
-
-1Styles
 
 CSS
 
